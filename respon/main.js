@@ -17,34 +17,33 @@ function closeMenu(){
     navBar.classList.remove("active");
 }
 
-// var slideImg = document.getElementById("slideImg");
+var slideImg = document.getElementById("slideImg");
 
-// var images = new Array(
-//     // "respon/images/img1.jpg",
-//     "/respon/img5.jpg",
-//     "/respon/img6.jpg",
-//     "/respon/img7r.jpg",
-//     "/respon/xy1.jpg",
-//     "/respon/xy2.jpg",
-//     "/respon/xy3.jpg",
-//     "/respon/xy4.jpg",
-//     "/respon/xy5.jpg",
-//     "/respon/xy6.jpg",
-//     "/respon/xy7.jpg",
-//     "/respon/xy8.jpg",
-//     "/respon/xy9.jpg",
-//     "/respon/xy10.jpg",
-// )
-// var len = images.length;
-// var i = 0;
-// function slider(){
-//     if(i > len-1){
-//         i=0;
-//     }
-//     slideImg.src = images[i];
-//     i++;
-//     setTimeout("slider()", 4500)
-// }
+var images = new Array(
+    "img5.jpg",
+    "img6.jpg",
+    "img7r.jpg",
+    "xy1.jpg",
+    "xy2.jpg",
+    "xy3.jpg",
+    "/xy4.jpg",
+    "/xy5.jpg",
+    "/xy6.jpg",
+    "/xy7.jpg",
+    "/xy8.jpg",
+    "/xy9.jpg",
+    "/xy10.jpg",
+)
+var len = images.length;
+var i = 0;
+function slider(){
+    if(i > len-1){
+        i=0;
+    }
+    slideImg.src = images[i];
+    i++;
+    setTimeout("slider()", 4500);
+}
 
 
 
